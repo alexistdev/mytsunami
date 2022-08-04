@@ -3,12 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/LARAVEL/mytsunami/android/app/src/main/res/drawable-v24/border_card.xml" value="0.247" />
         <entry key="..\:/LARAVEL/mytsunami/android/app/src/main/res/drawable-v24/color_selector.xml" value="0.247" />
         <entry key="..\:/LARAVEL/mytsunami/android/app/src/main/res/drawable-v24/ic_baseline_help_24.xml" value="0.247" />
         <entry key="..\:/LARAVEL/mytsunami/android/app/src/main/res/layout/activity_daftar.xml" value="0.36102564102564105" />
         <entry key="..\:/LARAVEL/mytsunami/android/app/src/main/res/layout/activity_dashboard.xml" value="0.36666666666666664" />
         <entry key="..\:/LARAVEL/mytsunami/android/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
         <entry key="..\:/LARAVEL/mytsunami/android/app/src/main/res/layout/fragment_akun.xml" value="0.36666666666666664" />
+        <entry key="..\:/LARAVEL/mytsunami/android/app/src/main/res/layout/fragment_help.xml" value="0.36666666666666664" />
+        <entry key="..\:/LARAVEL/mytsunami/android/app/src/main/res/layout/fragment_home.xml" value="0.36102564102564105" />
         <entry key="..\:/LARAVEL/mytsunami/android/app/src/main/res/menu/item_bottom_navigation.xml" value="0.36666666666666664" />
       </map>
     </option>

@@ -11,4 +11,6 @@
     <color name="bg_login_end">#B444DB</color>
     <color name="hover_menu">#D1A54D</color>
     <color name="dashboard_top">#D6B7F3</color>
+    <color name="red">#E91E63</color>
+    <color name="blue">#0968BC</color>
 </resources>
