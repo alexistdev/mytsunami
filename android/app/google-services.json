@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "572060161088",
+    "project_id": "storied-box-359823",
+    "storage_bucket": "storied-box-359823.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572060161088:android:226f6e063f48019a8cfba5",
+        "android_client_info": {
+          "package_name": "com.malik.mytstunami"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572060161088-p2ktqal7mopln9hsmo1vv0vemd4od3fh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvvcdQ_sKmcnnCURHQKOeELjuraaUD_yY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572060161088-p2ktqal7mopln9hsmo1vv0vemd4od3fh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-96064731/Mytsunami.iml" filepath="$PROJECT_DIR$/.idea/modules/-96064731/Mytsunami.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Mytsunami.app.iml" filepath="$PROJECT_DIR$/.idea/modules/Mytsunami.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Mytsunami.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/Mytsunami.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Mytsunami.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Mytsunami.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Mytsunami.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/Mytsunami.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>
