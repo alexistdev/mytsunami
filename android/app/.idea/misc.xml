@@ -6,7 +6,9 @@
         <entry key="..\:/LARAVEL/mytsunami/android/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
         <entry key="..\:/LARAVEL/mytsunami/android/app/src/main/res/layout/activity_maps.xml" value="0.36102564102564105" />
         <entry key="..\:/LARAVEL/mytsunami/android/app/src/main/res/layout/activity_maps2.xml" value="0.36666666666666664" />
+        <entry key="..\:/LARAVEL/mytsunami/android/app/src/main/res/layout/fragment_help.xml" value="0.33" />
         <entry key="..\:/LARAVEL/mytsunami/android/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/LARAVEL/mytsunami/android/app/src/main/res/menu/item_bottom_navigation.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

@@ -20,6 +20,9 @@
             android:layout_marginEnd="12sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
             android:text="Cara penggunaan:"/>
 
         <TextView
@@ -28,6 +31,8 @@
             android:layout_marginEnd="12sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
             android:text="- Aplikasi akan menampilkan informasi terkait gempa"/>
 
         <TextView
@@ -36,6 +41,8 @@
             android:layout_marginEnd="12sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
             android:text="- Data diperoleh dari BMKG"/>
 
         <TextView
@@ -44,6 +51,8 @@
             android:layout_marginEnd="12sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
             android:text="- Ketika pada hari ini data memenuhi kriteria potensi tsunami maka akan muncul notifikasi"/>
 
         <TextView
@@ -52,6 +61,8 @@
             android:layout_marginEnd="12sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
             android:text="- Ini sifatnya simulasi karena data yang diperoleh dari BMKG tidak realtime"/>
 
 
