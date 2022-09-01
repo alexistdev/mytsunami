@@ -46,7 +46,13 @@ public class NotificationHelper extends ContextWrapper {
                 .setContentTitle("Bahaya Tsunami!")
                 .setContentText("Telah terjadi gempa yang berpotensi tsunami.")
                 .setSmallIcon(R.drawable.warning);
-        Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+        Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
+        if(alarmSound == null){
+            alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+            if(alarmSound == null){
+                alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE);
+            }
+        }
         builder.setSound(alarmSound);
         return builder;
     }
