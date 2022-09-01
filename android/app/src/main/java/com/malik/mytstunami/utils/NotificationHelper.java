@@ -46,11 +46,11 @@ public class NotificationHelper extends ContextWrapper {
                 .setContentTitle("Bahaya Tsunami!")
                 .setContentText("Telah terjadi gempa yang berpotensi tsunami.")
                 .setSmallIcon(R.drawable.warning);
-        Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
+        Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE);
         if(alarmSound == null){
-            alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+            alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
             if(alarmSound == null){
-                alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE);
+                alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
             }
         }
         builder.setSound(alarmSound);
