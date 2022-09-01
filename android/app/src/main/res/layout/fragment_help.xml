@@ -11,7 +11,7 @@
         android:layout_height="250dp"
         android:layout_marginStart="12sp"
         android:layout_marginEnd="12sp"
-        android:background="@drawable/border_card"
+
         android:orientation="vertical">
 
         <TextView
