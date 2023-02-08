@@ -45,11 +45,11 @@ public class Home extends Fragment {
     private ProgressDialog pDialog;
     private LinearLayout mBox;
     private Button mMatikan;
+    private PendingIntent pendingIntent = null;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View mview= inflater.inflate(R.layout.fragment_home, container, false);
         dataInit(mview);
         setData();
@@ -88,25 +88,17 @@ public class Home extends Fragment {
                             mKedalaman.setText("Kedalaman :"+ response.body().getKedalaman());
                             mMagnitudo.setText("Magnitudo :" + response.body().getMagnitudo());
                             mRichter.setText(response.body().getMagnitudo() + "SR");
-                            mMatikan.setOnClickListener(new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-                                    cancelAlarm();
-                                    pesan("alarm sudah dimatikan");
-                                }
+                            mMatikan.setOnClickListener(v -> {
+                                cancelAlarm();
+                                pesan("alarm sudah dimatikan");
                             });
-                            mPeta.setOnClickListener(new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-                                    Intent intent = new Intent(getActivity(), MapsActivity.class);
-                                    startActivity(intent);
-                                    //                onTimeSet(3,46);
-                                }
+                            mPeta.setOnClickListener(v -> {
+                                Intent intent = new Intent(getActivity(), MapsActivity.class);
+                                startActivity(intent);
                             });
-
                         }
                     }else{
-
+                        pesan("data kosong");
                     }
                 }
                 @EverythingIsNonNull
@@ -155,7 +147,14 @@ public class Home extends Fragment {
     private void startAlarm(Calendar c) {
         AlarmManager alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
         Intent intent = new Intent(getActivity(), AlertReciever.class);
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(getActivity(), 1, intent, 0);
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
+//            pendingIntent = PendingIntent.getBroadcast(getActivity(), 1, intent, 0);
+            pendingIntent = PendingIntent.getActivity
+                    (getContext(), 0, intent, PendingIntent.FLAG_MUTABLE);
+        } else {
+            pendingIntent = PendingIntent.getBroadcast(getActivity(), 1, intent, 0);
+        }
+
 
         if (c.before(Calendar.getInstance())) {
             c.add(Calendar.DATE, 1);

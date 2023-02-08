@@ -11,7 +11,7 @@ class GempaController extends Controller
     public function dataGempa()
     {
         $now = now();
-        $mulai = date("Y-m-d",strtotime($now))." 00:59:00";
+        $mulai = date("Y-m-d",strtotime($now))." 00:01:00";
         $akhir = date("Y-m-d",strtotime($now))." 23:59:00";
         $gempa = Gempa::where('magnitudo','>=',7)
             ->whereBetween('created_at',[$mulai,$akhir])
@@ -29,7 +29,7 @@ class GempaController extends Controller
             return response()->json([
                 'status' => false,
                 'message' => "Data kosong!",
-            ], 401);
+            ], 404);
         }
     }
 }
